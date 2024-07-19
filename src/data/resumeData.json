@@ -1,0 +1,116 @@
+[
+    {
+        "maincontent": [
+            {
+                "year": "2007 - 2010",
+                "heading": "Education Quality",
+                "resumeinfo": [
+                    {
+                        "title": "Personal Portfolio April Fools",
+                        "university": "University of DVI (1997 - 2001)",
+                        "content": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+                        "rating": "4.30/5"
+                    },
+                    {
+                        "title": "Examples Of Personal Portfolio",
+                        "university": "College of Studies (2000 - 2002)",
+                        "content": "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+                        "rating": "4.20/5"
+                    }
+                ]
+            },
+            {
+                "year": "2010 - 2032",
+                "heading": "Job Experience",
+                "resumeinfo": [
+                    {
+                        "title": "Diploma in Web Development",
+                        "university": "BSE In CSE (2004 - 2008)",
+                        "content": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+                        "rating": "4.70/5"
+                    },
+                    {
+                        "title": "The Personal Portfolio Mystery",
+                        "university": "College of Studies (2000 - 2002)",
+                        "content": "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+                        "rating": "4.96/5"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "maincontent": [
+            {
+                "year": "",
+                "heading": "",
+                "professionalskills": [
+                    {
+                        "subtitle": "Features",
+                        "title": "Design Skill",
+                        "skillsinfo": [
+                            {
+                                "content": "PHOTOSHOT",
+                                "rating": "50"
+                            },
+                            {
+                                "content": "Figma",
+                                "rating": "70"
+                            }
+                        ]
+                    },
+                    {
+                        "subtitle": "Features",
+                        "title": "Development Skill",
+                        "skillsinfo": [
+                            {
+                                "content": "Html",
+                                "rating": "90"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "maincontent": [
+            {
+                "year": "2019 - 2032",
+                "heading": "dfbjfbjf Quality",
+                "resumeinfo": [
+                    {
+                        "title": "Personal Portfolio April Fools",
+                        "university": "University of DVI (1997 - 2001)",
+                        "content": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+                        "rating": "4.30/5"
+                    },
+                    {
+                        "title": "Examples Of Personal Portfolio",
+                        "university": "College of Studies (2000 - 2002)",
+                        "content": "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+                        "rating": "4.20/5"
+                    }
+                ]
+            },
+            {
+                "year": "2010 - 2032",
+                "heading": "werwerwe Quality",
+                "resumeinfo": [
+                    {
+                        "title": "Personal Portfolio April Fools",
+                        "university": "University of DVI (1997 - 2001)",
+                        "content": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+                        "rating": "4.30/5"
+                    },
+                    {
+                        "title": "Examples Of Personal Portfolio",
+                        "university": "College of Studies (2000 - 2002)",
+                        "content": "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+                        "rating": "4.20/5"
+                    }
+                ]
+            }
+        ]
+    }
+]

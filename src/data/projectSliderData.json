@@ -1,0 +1,50 @@
+[
+    {
+        "image": "images/dg-club.jpg",
+        "tag": "photoshop",
+        "title": "The services provide for design",
+        "likes": 650,
+        "description1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.",
+        "description2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi."
+    },
+    {
+        "image": "images/heal-co.jpg",
+        "tag": "figma",
+        "title": "PHP with app landing design & Services",
+        "likes": 250,
+        "description1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.",
+        "description2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi."
+    },
+    {
+        "image": "images/swing-fans.jpg",
+        "tag": "shopify",
+        "title": "Web app Responsive design & Services",
+        "likes": 350,
+        "description1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.",
+        "description2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi."
+    },
+    {
+        "image": "images/chill.jpg",
+        "tag": "photoshop",
+        "title": "Mobile app landing design & Services",
+        "likes": 420,
+        "description1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.",
+        "description2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi."
+    },
+    {
+        "image": "images/club-sulivan.jpg",
+        "tag": "react",
+        "title": "Web app Responsive design & Services",
+        "likes": 650,
+        "description1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.",
+        "description2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi."
+    },
+    {
+        "image": "images/wild_junkie.jpg",
+        "tag": "photoshop",
+        "title": "PHP with app landing design & Services",
+        "likes": 150,
+        "description1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.",
+        "description2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi."
+    }
+]
