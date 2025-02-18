@@ -33,7 +33,7 @@ export default ({ resumedata }) => {
                                     <div className={`mt-10 ${data.maincontent.some(section => section.resumeinfo) ? 'personal-experience-inner' : ''} ${data.maincontent.some(section => section.professionalskills) ? 'tab-professionalskills' : ''}`}>
                                         <div className='content-info flex flex-wrap'>
                                             {data.maincontent.map((section, sectionIndex) => (
-                                                <div key={sectionIndex} className={`${data.maincontent.some(section => section.resumeinfo) ? 'w-1/2 px-3 mb-10' : ''} ${data.maincontent.some(section => section.professionalskills) ? 'w-full' : ''}`}>
+                                                <div key={sectionIndex} className={`${data.maincontent.some(section => section.resumeinfo) ? 'w-full md:w-1/2 px-3 mb-10' : ''} ${data.maincontent.some(section => section.professionalskills) ? 'w-full' : ''}`}>
                                                     {section.resumeinfo ? (
                                                         <div className=''>
                                                             <span className='subtitle text-sm font-medium'>{section.year}</span>
