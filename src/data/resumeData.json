@@ -2,38 +2,38 @@
     {
         "maincontent": [
             {
-                "year": "2007 - 2010",
-                "heading": "Education Quality",
+                "year": "2019 - Present",
+                "heading": "ShopTrade®",
                 "resumeinfo": [
                     {
-                        "title": "Personal Portfolio April Fools",
-                        "university": "University of DVI (1997 - 2001)",
-                        "content": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+                        "title": "Senior Front-End Engineer",
+                        "university": "ShopTrade®",
+                        "content": "Developed and maintained Shopify e-commerce websites for clients across various industries.",
                         "rating": "4.30/5"
-                    },
-                    {
-                        "title": "Examples Of Personal Portfolio",
-                        "university": "College of Studies (2000 - 2002)",
-                        "content": "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
-                        "rating": "4.20/5"
                     }
                 ]
             },
             {
-                "year": "2010 - 2032",
-                "heading": "Job Experience",
+                "year": "2016 - 2019",
+                "heading": "Provab Technosoft",
                 "resumeinfo": [
                     {
-                        "title": "Diploma in Web Development",
-                        "university": "BSE In CSE (2004 - 2008)",
-                        "content": "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
-                        "rating": "4.70/5"
-                    },
+                        "title": "Front End Engineer",
+                        "university": "Provab Technosoft",
+                        "content": "Working on various mobile and desktop applications for PROVAB which handles custom travel portal software",
+                        "rating": "4/5"
+                    }
+                ]
+            },
+            {
+                "year": "2015 - 2016",
+                "heading": "Indglobal Consulting Solutions",
+                "resumeinfo": [
                     {
-                        "title": "The Personal Portfolio Mystery",
-                        "university": "College of Studies (2000 - 2002)",
-                        "content": "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
-                        "rating": "4.96/5"
+                        "title": "UI Developer",
+                        "university": "Indglobal Consulting Solutions",
+                        "content": "Discuss with the client about project and business requirements. As per business requirement choosing best suitable front end technologies and doing project architecture",
+                        "rating": "3.70/5"
                     }
                 ]
             }
@@ -46,7 +46,7 @@
                 "heading": "",
                 "professionalskills": [
                     {
-                        "subtitle": "Features",
+                        "subtitle": "UX Features",
                         "title": "Design Skill",
                         "skillsinfo": [
                             {
@@ -54,18 +54,34 @@
                                 "rating": "50"
                             },
                             {
-                                "content": "Figma",
+                                "content": "Responsive Design",
+                                "rating": "80"
+                            },
+                            {
+                                "content": "Git",
                                 "rating": "70"
                             }
                         ]
                     },
                     {
-                        "subtitle": "Features",
+                        "subtitle": "UI Features",
                         "title": "Development Skill",
                         "skillsinfo": [
                             {
                                 "content": "Html",
                                 "rating": "90"
+                            },
+                            {
+                                "content": "Css",
+                                "rating": "90"
+                            },
+                            {
+                                "content": "Javascript",
+                                "rating": "65"
+                            },
+                            {
+                                "content": "ReactJs",
+                                "rating": "45"
                             }
                         ]
                     }
@@ -76,38 +92,50 @@
     {
         "maincontent": [
             {
-                "year": "2019 - 2032",
-                "heading": "dfbjfbjf Quality",
+                "year": "2010 - 2013",
+                "heading": "VTU",
                 "resumeinfo": [
                     {
-                        "title": "Personal Portfolio April Fools",
-                        "university": "University of DVI (1997 - 2001)",
-                        "content": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
-                        "rating": "4.30/5"
-                    },
-                    {
-                        "title": "Examples Of Personal Portfolio",
-                        "university": "College of Studies (2000 - 2002)",
-                        "content": "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
-                        "rating": "4.20/5"
+                        "title": "Master of Computer Applications",
+                        "university": "Visvesvaraya Technological University",
+                        "content": "",
+                        "rating": "67%"
                     }
                 ]
             },
             {
-                "year": "2010 - 2032",
-                "heading": "werwerwe Quality",
+                "year": "2007 - 2010",
+                "heading": "KUD",
                 "resumeinfo": [
                     {
-                        "title": "Personal Portfolio April Fools",
-                        "university": "University of DVI (1997 - 2001)",
-                        "content": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
-                        "rating": "4.30/5"
-                    },
+                        "title": "Bachelor of Computer Application",
+                        "university": "Karnataka University Dharwad",
+                        "content": "",
+                        "rating": "56%"
+                    }
+                ]
+            },
+            {
+                "year": "2006 - 2007",
+                "heading": "SDVS PU COLLEGE",
+                "resumeinfo": [
                     {
-                        "title": "Examples Of Personal Portfolio",
-                        "university": "College of Studies (2000 - 2002)",
-                        "content": "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
-                        "rating": "4.20/5"
+                        "title": "Class XII",
+                        "university": "RC University",
+                        "content": "",
+                        "rating": "43%"
+                    }
+                ]
+            },
+            {
+                "year": "2005 - 2006",
+                "heading": "SSLC",
+                "resumeinfo": [
+                    {
+                        "title": "Class X",
+                        "university": "Secondary School Leaving Certificate",
+                        "content": "",
+                        "rating": "75%"
                     }
                 ]
             }

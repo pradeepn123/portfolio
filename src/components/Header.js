@@ -20,7 +20,7 @@ export default () => {
                         <div className="w-3/12">
                             <div className="logo">
                                 <a href="index.html">
-                                    <img src="./logo-dark.png" alt="logo" />
+                                    <img src="./logo.svg" alt="logo" width="140" height="90"/>
                                 </a>
                             </div>
                         </div>
@@ -34,14 +34,14 @@ export default () => {
                                         <a className="px-3 py-2" href="#features">Features</a>
                                     </li>
                                     <li className="px-2.5 py-2.5">
+                                        <a className="px-3 py-2" href="#resume">Resume</a>
+                                    </li>
+                                    <li className="px-2.5 py-2.5">
                                         <a className="px-3 py-2" href="#portfolio">Portfolio</a>
                                     </li>
-                                    <li className="px-2.5 py-2.5">
-                                        <a className="px-3 py-2" href="#resume">Resume</a>
-                                    </li>                                    
-                                    <li className="px-2.5 py-2.5">
+                                    {/* <li className="px-2.5 py-2.5">
                                         <a className="px-3 py-2" href="#blog">blog</a>
-                                    </li>
+                                    </li> */}
                                     <li className="px-2.5 py-2.5">
                                         <a className="px-3 py-2" href="#contact">Contact</a>
                                     </li>
