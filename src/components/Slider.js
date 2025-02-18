@@ -33,9 +33,10 @@ export default () => {
                                         </span>
                                     </h1>
                                     <div>
-                                        <p className="description text-base">I use animation as a third dimension by which to simplify
-                                            experiences and kuiding thro each and every interaction. I’m not adding
-                                            motion just to spruce things up, but doing it in ways that.
+                                        <p className="description text-base">
+                                            Experienced and versatile web developer with 8 years of hands-on
+                                            experience in designing, developing, and maintaining cutting-edge web
+                                            applications.
                                         </p>
                                     </div>
                                 </div>                                
@@ -44,13 +45,11 @@ export default () => {
                         <div className="w-full md:w-5/12 px-4 sm:px-8">
                             <div className="image-thumbnail">
                                 <div className="inner">
-                                    <img src="banner-01.png" alt="Personal Portfolio Image" />
+                                    <img src="pradeep.png" alt="Personal Portfolio Image" />
                                 </div>
                             </div>
                         </div>
-                        <div class="effect-1 hidden xl:block">
-                            <img src="https://janna-react.vercel.app/images/effect-1.svg" alt="Shape" />
-                        </div>
+                        
                     </div>
                 </div>
             </div>

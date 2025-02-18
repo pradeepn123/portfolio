@@ -15,13 +15,13 @@ export default ({ resumedata }) => {
                         <Tabs>
                             <TabList className='flex custom-tab-list'>
                                 <Tab className='basis-1/4 text-center'>
-                                    <a href='javascript:void(0)' className='nav-link'>education</a>
+                                    <a href='javascript:void(0)' className='nav-link'>experience</a>
                                 </Tab>
                                 <Tab className='basis-1/4 text-center'>
                                     <a href='javascript:void(0)' className='nav-link'>professional Skills</a>
                                 </Tab>
                                 <Tab className='basis-1/4 text-center'>
-                                    <a href='javascript:void(0)' className='nav-link'>experience</a>
+                                    <a href='javascript:void(0)' className='nav-link'>education</a>
                                 </Tab>
                                 <Tab className='basis-1/4 text-center'>
                                     <a href='javascript:void(0)' className='nav-link'>interview</a>
@@ -31,9 +31,9 @@ export default ({ resumedata }) => {
                             {resumedata.map((data, index) => (
                                 <TabPanel key={index}>
                                     <div className={`mt-10 ${data.maincontent.some(section => section.resumeinfo) ? 'personal-experience-inner' : ''} ${data.maincontent.some(section => section.professionalskills) ? 'tab-professionalskills' : ''}`}>
-                                        <div className='content-info flex'>
+                                        <div className='content-info flex flex-wrap'>
                                             {data.maincontent.map((section, sectionIndex) => (
-                                                <div key={sectionIndex} className={`${data.maincontent.some(section => section.resumeinfo) ? 'w-1/2 px-3' : ''} ${data.maincontent.some(section => section.professionalskills) ? 'w-full' : ''}`}>
+                                                <div key={sectionIndex} className={`${data.maincontent.some(section => section.resumeinfo) ? 'w-1/2 px-3 mb-10' : ''} ${data.maincontent.some(section => section.professionalskills) ? 'w-full' : ''}`}>
                                                     {section.resumeinfo ? (
                                                         <div className=''>
                                                             <span className='subtitle text-sm font-medium'>{section.year}</span>

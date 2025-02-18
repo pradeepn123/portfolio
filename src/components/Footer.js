@@ -9,10 +9,10 @@ export default () => {
                                 <div class="container">
                                     <div class="copyright_inner flex items-center justify-between">
                                         <div class="logo">
-                                            <img src="logo-dark.png" alt="" />
+                                            <img src="logo-dark.svg" alt="footer logo" width={120} />
                                         </div>
                                         <div class="copy">
-                                            <p>© 2024 by <a href="#" target="_blank">Codeefly.</a> All Rights Reserved</p>
+                                            <p>© 2024 by <a href="https://pradeepneginhal.vercel.app/">pradeepneginhal.vercel.app</a> All Rights Reserved</p>
                                         </div>
                                     </div>
                                 </div>

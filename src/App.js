@@ -19,8 +19,8 @@ function App() {
           <Header />
           <Slider />
           <Features data={jsonData} />
-          <ProjectSlider projectdata={projectSliderData} />
           <Resume resumedata={resumeData} />
+          <ProjectSlider projectdata={projectSliderData} />
           <ContactUs />
           <Footer />
       </div>

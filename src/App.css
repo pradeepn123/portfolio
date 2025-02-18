@@ -48,7 +48,7 @@ body{
 }
 
 .main-slider-sec{
-  padding-top: 140px;
+  padding-top: 120px;
 }
 
 .slider .image-thumbnail {
@@ -237,7 +237,7 @@ body{
 }
 
 .content-info .title > div {
-  display: ruby-text;  
+  display: flex;  
   
 }
 .content-info .title > div img{
