@@ -24,7 +24,7 @@ export default ({ resumedata }) => {
                                     <a href='javascript:void(0)' className='nav-link'>education</a>
                                 </Tab>
                                 <Tab className='basis-1/4 text-center'>
-                                    <a href='javascript:void(0)' className='nav-link'>interview</a>
+                                    <a href='javascript:void(0)' className='nav-link'>Projects</a>
                                 </Tab>
                             </TabList>
 
