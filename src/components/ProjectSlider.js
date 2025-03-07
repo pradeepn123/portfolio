@@ -7,10 +7,10 @@ const ProjectCarousel = ({ projectdata }) => {
     const modal = useRef();
     const [selectedProject, setSelectedProject] = useState(projectdata[0]);
 
-    function handleModalPopup(project) {
-        setSelectedProject(project);
-        modal.current.open();
-    }
+    // function handleModalPopup(project) {
+    //     setSelectedProject(project);
+    //     modal.current.open();
+    // }
 
     function NextArrow(props) {
         const { className, style, onClick } = props;
@@ -86,13 +86,15 @@ const ProjectCarousel = ({ projectdata }) => {
                                     <div className="px-4" key={index}>
                                         <div className="project-portfolio mb-5 p-6 text-left relative">
                                             <div className="inner-wrapper">
-                                                <div className="thumbnail-image">
-                                                    <button onClick={() => handleModalPopup(item)} className="block rounded-lg overflow-hidden w-full">
-                                                        <img
-                                                            className="object-cover w-full h-96"
-                                                            src={item.image}
-                                                            alt="Personal Portfolio"
-                                                        />
+                                                <div className="thumbnail-image">                                                    
+                                                    <button className="block rounded-lg overflow-hidden w-full">
+                                                        <a href={item.weblink} target="_blank">
+                                                            <img
+                                                                className="object-cover w-full h-96"
+                                                                src={item.image}
+                                                                alt="Personal Portfolio"
+                                                            />
+                                                        </a>
                                                     </button>
                                                 </div>
                                                 <div className="content-info pt-4">
@@ -109,12 +111,14 @@ const ProjectCarousel = ({ projectdata }) => {
                                                             </span>
                                                         </div>
                                                     </div>
-                                                    <h4 className="title">
-                                                        <div className="font-semibold text-2xl">
-                                                            {item.title}
-                                                            <img src="./icons/arrow-up-right.svg" alt="" />
-                                                        </div>
-                                                    </h4>
+                                                    <a href={item.weblink} target="_blank">
+                                                        <h4 className="title">
+                                                            <div className="font-semibold text-2xl">
+                                                                {item.title}
+                                                                <img src="./icons/arrow-up-right.svg" alt="" />
+                                                            </div>
+                                                        </h4>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>

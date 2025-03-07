@@ -34,9 +34,9 @@ export default () => {
                                     </h1>
                                     <div>
                                         <p className="description text-base">
-                                            Experienced and versatile web developer with 8 years of hands-on
-                                            experience in designing, developing, and maintaining cutting-edge web
-                                            applications.
+                                        Experienced Web Developer with 8.5 years of expertise in HTML, CSS, JavaScript, ReactJS, NextJS, and Shopify (Liquid). 
+                                        Skilled in creating pixel-perfect, responsive, and high-performance web applications, including Shopify & headless commerce solutions. 
+                                        Passionate about converting Figma designs into websites and leading development teams.
                                         </p>
                                     </div>
                                 </div>                                
