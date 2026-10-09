@@ -1,30 +1,38 @@
-import './App.css';
-import Features from './components/Features';
-import Header from './components/Header';
-import Slider from './components/Slider';
-import ProjectSlider from './components/ProjectSlider';
-import jsonData from "./data/featureData.json";
-import projectSliderData from "./data/projectSliderData.json";
-import resumeData from "./data/resumeData.json";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Resume from './components/Resume';
-import ContactUs from './components/ContactUs';
-import Footer from './components/Footer';
+import About from "./components/About";
+import BackToTop from "./components/BackToTop";
+import ContactUs from "./components/ContactUs";
+import Experience from "./components/Experience";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Projects from "./components/Projects";
+import Services from "./components/Services";
+import Skills from "./components/Skills";
+import useTheme from "./hooks/useTheme";
 
 function App() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <>
-      <div className="App">
-          <Header />
-          <Slider />
-          <Features data={jsonData} />
-          <Resume resumedata={resumeData} />
-          <ProjectSlider projectdata={projectSliderData} />
-          <ContactUs />
-          <Footer />
-      </div>
-      <div id="modal-root"></div>
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-accent focus:px-4 focus:py-2 focus:text-accent-fg"
+      >
+        Skip to content
+      </a>
+      <Header theme={theme} onToggleTheme={toggleTheme} />
+      <main id="main">
+        <Hero />
+        <About />
+        <Services />
+        <Experience />
+        <Skills />
+        <Projects />
+        <ContactUs />
+      </main>
+      <Footer />
+      <BackToTop />
     </>
   );
 }

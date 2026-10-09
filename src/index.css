@@ -2,16 +2,313 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Theme tokens — RGB triplets so Tailwind can apply alpha (e.g. bg-accent/10). */
+:root,
+[data-theme="light"] {
+  --bg: 248 249 251;
+  --surface: 255 255 255;
+  --surface-2: 240 243 248;
+  --line: 225 230 238;
+  --ink: 15 23 42;
+  --muted: 84 95 115;
+  --accent: 37 87 214;
+  --accent-2: 14 165 233;
+  --accent-fg: 255 255 255;
+  --shadow: 15 23 42;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  color-scheme: light;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+[data-theme="dark"] {
+  --bg: 10 12 18;
+  --surface: 17 20 29;
+  --surface-2: 24 28 40;
+  --line: 38 44 58;
+  --ink: 236 239 245;
+  --muted: 153 162 181;
+  --accent: 115 155 255;
+  --accent-2: 103 232 249;
+  --accent-fg: 10 12 18;
+  --shadow: 0 0 0;
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-bg font-sans text-ink antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  ::selection {
+    @apply bg-accent/20;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-bg;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-20 sm:py-28;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-3 font-mono text-xs font-medium uppercase tracking-[0.18em] text-accent;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply h-px w-6 bg-accent;
+  }
+
+  .card {
+    @apply rounded-2xl border border-line bg-surface shadow-card;
+  }
+  [data-theme="dark"] .card {
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.04), 0 8px 24px -12px rgb(0 0 0 / 0.5);
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-full border border-line bg-surface-2 px-3 py-1 text-xs font-medium text-muted;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition duration-300;
+  }
+
+  .btn-primary {
+    @apply btn relative isolate overflow-hidden bg-accent text-accent-fg shadow-card hover:-translate-y-0.5 hover:shadow-lift;
+  }
+  /* Light sweep across the primary button on hover. */
+  .btn-primary::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(110deg, transparent 30%, rgb(255 255 255 / 0.35) 50%, transparent 70%);
+    transform: translateX(-120%);
+    transition: transform 0.8s var(--ease-out);
+  }
+  .btn-primary:hover::after {
+    transform: translateX(120%);
+  }
+
+  .btn-ghost {
+    @apply btn border border-line bg-surface text-ink hover:-translate-y-0.5 hover:border-accent/50 hover:text-accent;
+  }
+
+  .btn .btn-arrow {
+    transition: transform 0.3s var(--ease-out);
+  }
+  .btn:hover .btn-arrow {
+    transform: translateX(3px);
+  }
+
+  .field {
+    @apply w-full rounded-xl border border-line bg-bg px-4 py-3 text-sm text-ink placeholder:text-muted/70 transition focus:border-accent focus:outline-none focus:ring-4 focus:ring-accent/15;
+  }
+
+  /* Logo SVG is drawn in black; flip it for dark mode. */
+  [data-theme="dark"] .logo-mark {
+    filter: invert(1);
+  }
+
+  .text-gradient {
+    background-image: linear-gradient(
+      90deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-2)),
+      rgb(var(--accent)),
+      rgb(var(--accent-2))
+    );
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 8s linear infinite;
+  }
+
+  /* Cursor-following highlight; --mx/--my are set by trackPointer(). */
+  .spotlight {
+    position: relative;
+    isolation: isolate;
+  }
+  .spotlight::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    pointer-events: none;
+    background: radial-gradient(
+      420px circle at var(--mx, 50%) var(--my, 50%),
+      rgb(var(--accent) / 0.1),
+      transparent 45%
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  .spotlight:hover::before {
+    opacity: 1;
+  }
+
+  .tilt {
+    transform: perspective(1200px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+    transform-style: preserve-3d;
+    transition: transform 0.5s var(--ease-out);
+  }
+  .tilt-pop {
+    transform: translateZ(50px);
+  }
+
+  .marquee {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  }
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 45s linear infinite;
+  }
+  .marquee:hover .marquee-track {
+    animation-play-state: paused;
+  }
+
+  /* Load-in animations; stagger with style={{ "--d": "120ms" }}. */
+  .enter {
+    animation: enter 0.9s var(--ease-out) both;
+    animation-delay: var(--d, 0ms);
+  }
+  .enter-up {
+    display: block;
+    animation: enter-up 1s var(--ease-out) both;
+    animation-delay: var(--d, 0ms);
+  }
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+  .drift {
+    animation: drift 18s ease-in-out infinite alternate;
+  }
+
+  /* Scroll reveal uses an animation (not a transition) so it never delays hover effects.
+     fill-mode "backwards" hands transform back to the element once it finishes. */
+  .reveal {
+    opacity: 0;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    animation: reveal 0.8s var(--ease-out) backwards;
+    animation-delay: var(--d, 0ms);
+  }
+
+  .timeline-dot {
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  }
+  [data-reached="true"] .timeline-dot {
+    @apply border-accent bg-accent text-accent-fg;
+    box-shadow: 0 0 0 6px rgb(var(--accent) / 0.15);
+  }
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+    filter: blur(6px);
+  }
+}
+
+@keyframes enter-up {
+  from {
+    transform: translateY(110%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 300% center;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translate3d(-8%, -4%, 0) scale(1);
+  }
+  100% {
+    transform: translate3d(8%, 6%, 0) scale(1.15);
+  }
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Theme switch: let the circular clip-path reveal (ThemeToggle) do the animating. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal,
+  .enter,
+  .enter-up {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+    animation: none;
+  }
+  .float,
+  .drift,
+  .text-gradient,
+  .marquee-track {
+    animation: none;
+  }
+  .tilt {
+    transform: none;
+  }
 }
