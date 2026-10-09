@@ -1,6 +1,6 @@
 import { TypeAnimation } from 'react-type-animation';
 
-export default () => {
+const Slider = () => {
     return (
         <>
             <div className="slider main-slider-sec pb-20" id="home">
@@ -45,7 +45,7 @@ export default () => {
                         <div className="w-full md:w-5/12 px-4 sm:px-8">
                             <div className="image-thumbnail">
                                 <div className="inner">
-                                    <img src="pradeep.png" alt="Personal Portfolio Image" />
+                                    <img src="pradeep.png" alt="Pradeep Neginhal" />
                                 </div>
                             </div>
                         </div>
@@ -57,3 +57,4 @@ export default () => {
     )
 }
 
+export default Slider;

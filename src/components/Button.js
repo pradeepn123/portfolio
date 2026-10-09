@@ -1,4 +1,4 @@
-export default ({children, ...props}) => {
+const Button = ({children, ...props}) => {
     return(
         <button className="px-4 py-2 text-xs md:text-base rounded-md text-stone-400 hover:text-stone-100"
         {...props}>
@@ -6,3 +6,5 @@ export default ({children, ...props}) => {
         </button>
     )
 }
+
+export default Button;
