@@ -3,7 +3,7 @@ import 'react-tabs/style/react-tabs.css';
 import Headings from './Headings';
 import ProgressBar from "@ramonak/react-progress-bar";
 
-export default ({ resumedata }) => {
+const Resume = ({ resumedata }) => {
     console.log(resumedata, 'resumedata');
 
     return (
@@ -15,16 +15,16 @@ export default ({ resumedata }) => {
                         <Tabs>
                             <TabList className='flex custom-tab-list'>
                                 <Tab className='basis-1/4 text-center'>
-                                    <a href='javascript:void(0)' className='nav-link'>experience</a>
+                                    <span className='nav-link'>experience</span>
                                 </Tab>
                                 <Tab className='basis-1/4 text-center'>
-                                    <a href='javascript:void(0)' className='nav-link'>professional Skills</a>
+                                    <span className='nav-link'>professional Skills</span>
                                 </Tab>
                                 <Tab className='basis-1/4 text-center'>
-                                    <a href='javascript:void(0)' className='nav-link'>education</a>
+                                    <span className='nav-link'>education</span>
                                 </Tab>
                                 <Tab className='basis-1/4 text-center'>
-                                    <a href='javascript:void(0)' className='nav-link'>Projects</a>
+                                    <span className='nav-link'>Projects</span>
                                 </Tab>
                             </TabList>
 
@@ -108,3 +108,5 @@ export default ({ resumedata }) => {
         </>
     );
 };
+
+export default Resume;

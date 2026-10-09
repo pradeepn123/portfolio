@@ -1,6 +1,6 @@
 import Headings from "./Headings"
 
-export default ({ data }) => {
+const Features = ({ data }) => {
 
     return (
         <>
@@ -16,9 +16,9 @@ export default ({ data }) => {
                                             <div dangerouslySetInnerHTML={{ __html: item.icon }}></div>
                                         </div>
                                         <div className="content">
-                                            <h4 className="title"><a href="#">{item.title}</a></h4>
+                                            <h4 className="title"><a href="#contact">{item.title}</a></h4>
                                             <p className="description">{item.description}</p>
-                                            <a className="read-more-button" href="#" dangerouslySetInnerHTML={{ __html: item.arrow }}></a>
+                                            <a className="read-more-button" href="#contact" aria-label={`Get in touch about ${item.title}`} dangerouslySetInnerHTML={{ __html: item.arrow }}></a>
                                         </div>
                                     </div>
                                 </div>
@@ -30,3 +30,5 @@ export default ({ data }) => {
         </>
     )
 }
+
+export default Features;

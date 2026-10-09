@@ -1,4 +1,4 @@
-export default ({ title, subtitle }) => {
+const Headings = ({ title, subtitle }) => {
     return (
         <div className="section-title text-left px-4 md:px-10 xl:px-28">
             <span className="subtitle">{subtitle}</span>
@@ -6,3 +6,5 @@ export default ({ title, subtitle }) => {
         </div>
     )
 }
+
+export default Headings;

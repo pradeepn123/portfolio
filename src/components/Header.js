@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-export default () => {
+const Header = () => {
     useEffect(() => {
         window.addEventListener('scroll', isSticky);
         return () => {
@@ -54,3 +54,5 @@ export default () => {
         </>
     )
 }
+
+export default Header;

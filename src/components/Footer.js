@@ -1,4 +1,4 @@
-export default () => {
+const Footer = () => {
     return (
         <>
             <div className="footer_section_contact pb-10">
@@ -24,3 +24,5 @@ export default () => {
         </>
     )
 }
+
+export default Footer;
