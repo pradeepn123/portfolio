@@ -41,7 +41,7 @@ const Footer = () => (
       </div>
     </div>
     <p className="border-t border-line py-5 text-center text-xs text-muted">
-      © {new Date().getFullYear()} {profile.name}. Built with React & Tailwind CSS.
+      © {new Date().getFullYear()} {profile.name}. All rights reserved.
     </p>
   </footer>
 );
